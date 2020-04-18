@@ -1,0 +1,160 @@
+﻿<%@ Master
+    Language="C#"
+    AutoEventWireup="true"
+    CodeFile="AddressHeader.master.cs"
+    Inherits="AddressHeader" %>
+
+<!DOCTYPE html>
+
+<html>
+<head
+    runat="server">
+    <title>
+    </title>
+
+    <style
+        type="text/css">
+        .auto-style110 {
+            font-size: small;
+            color: #FF0000;
+            background-color: #C0C0C0
+        }
+
+        .auto-style210 {
+            font-size: small;
+            background-color: #C0C0C0;
+        }
+
+        .auto-style310 {
+            height: 23px;
+            background-color: #C0C0C0;
+        }
+    </style>
+
+</head>
+<body>
+    <div
+        align="center">
+
+        <table
+            style="width: 75%;"
+            border="1">
+            <tr>
+                <td
+                    colspan="3"
+                    class="auto-style310"
+                    style="background-color: #C0C0C0">
+                    <strong>
+                        ADDRESS:
+                        <asp:Label
+                            ID="SiteAddress"
+                            runat="server"></asp:Label>
+                    </strong>
+                </td>
+                <td
+                    class="auto-style310">
+                    <asp:Label
+                        ID="TLNO"
+                        runat="server"
+                        CssClass="auto-style110"></asp:Label>
+                </td>
+                <td
+                    class="auto-style310">
+                    <span
+                        class="auto-style210">
+                        Description:
+                    </span>
+                    <asp:Label
+                        ID="Description"
+                        runat="server"
+                        CssClass="auto-style210"></asp:Label>
+                </td>
+                <td
+                    class="auto-style310">
+                    <span
+                        class="auto-style210">
+                        STATUS:
+                    </span>
+                    <asp:Label
+                        ID="Status"
+                        runat="server"
+                        CssClass="auto-style219"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td
+                    style="background-color: #C0C0C0">
+                    <span
+                        class="auto-style210">
+                        CITY:
+                    </span>
+                    <asp:Label
+                        ID="City"
+                        runat="server"
+                        CssClass="auto-style210"></asp:Label>
+                </td>
+                <td style="background-color: #C0C0C0"><span
+                    class="auto-style210">
+                    STATE:
+                </span>
+                    <asp:Label
+                        ID="State"
+                        runat="server"
+                        CssClass="auto-style210"></asp:Label>
+                </td>
+                <td style="background-color: #C0C0C0"><span
+                    class="auto-style210">
+                    ZIP:
+                </span>
+                    <asp:Label
+                        ID="Zip"
+                        runat="server"
+                        CssClass="auto-style210"></asp:Label>
+                </td>
+                <td style="background-color: #C0C0C0"><span
+                    class="auto-style210">
+                    INSP
+                    ZONE:
+                </span>
+                    <asp:Label
+                        ID="INSPZone"
+                        runat="server"
+                        CssClass="auto-style210"></asp:Label>
+                </td>
+                <td
+                    style="background-color: #C0C0C0">
+                    <span
+                        class="auto-style210">
+                        OCCUPANCY:
+                    </span>
+                    <asp:Label
+                        ID="Occupancy"
+                        runat="server"
+                        CssClass="auto-style210"></asp:Label>
+                </td>
+                <td style="background-color: #C0C0C0"><span
+                    class="auto-style210">
+                    JURISTICTION:
+                </span>
+                    <asp:Label
+                        ID="Jurisdiction"
+                        runat="server"
+                        CssClass="auto-style210"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td
+                    colspan="6">
+                    <asp:ContentPlaceHolder
+                        ID="ContentPlaceHolder1"
+                        runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>
+

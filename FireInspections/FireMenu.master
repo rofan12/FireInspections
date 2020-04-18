@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FireMenu.master.cs" Inherits="FireMenu" %>
+    <form id="form1" runat="server">
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<style type="text/css">
+    html { 
+        background: url(image/fire.jpg) no-repeat ;
+        background-size:cover;
+    }
+    .auto-style9 {
+        width: 378px;
+        height: 26px;
+        text-align: right;
+        color: #FFFFFF;
+    }
+</style>
+<body> 
+    <div align ="center" >
+        <table style="width: 100%; ">
+            <tr>
+                <td class="auto-style4" align="center">
+                    <asp:Image ID="Image1" runat="server" Height="131px" ImageUrl="~/image/FireLogo.png" />
+                    <asp:Image ID="Image3" runat="server" Height="131px" ImageUrl="~/image/Hillsboro.jpg" Width="238px" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="min-height: 500px">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <div id="dvfooter" align="center">
+        <h1>
+            <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Default.aspx">HOME</asp:LinkButton>
+        </h1>
+    </div>
+
+</body>
+</html>
+        </form>
